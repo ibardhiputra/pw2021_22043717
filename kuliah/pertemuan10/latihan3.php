@@ -1,4 +1,5 @@
 <?php
+// hubungkan dengan file function.php
 require 'functions.php';
 
 $mahasiswa = query("SELECT * FROM mahasiswa");
