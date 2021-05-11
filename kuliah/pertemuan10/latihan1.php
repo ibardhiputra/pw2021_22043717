@@ -1,5 +1,5 @@
 <?php
-// koneksi ke database dan pilih databasenya
+// koneksi ke database dan pilih databasenya.
 $conn = mysqli_connect('localhost', 'root', '', 'pw_22043717');
 
 // query isi tabel mahasiswa dalam database pw_22043717

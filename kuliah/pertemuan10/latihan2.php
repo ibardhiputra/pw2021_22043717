@@ -2,7 +2,7 @@
 require 'functions.php';
 
 $mahasiswa = query("SELECT * FROM mahasiswa");
-var_dump($mahasiswa);
+// var_dump($mahasiswa);
 
 ?>
 
