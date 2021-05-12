@@ -2,7 +2,7 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', 'root', 'pw_043040023');
+  return mysqli_connect('localhost', 'root', '', 'pw_22043717');
 }
 
 function query($query)
@@ -47,11 +47,7 @@ function hapus($id)
 {
   $conn = koneksi();
   mysqli_query($conn, "DELETE FROM mahasiswa WHERE id = $id") or die(mysqli_error($conn));
-
-  $status = mysqli_affected_rows($conn);
-  echo "status=" . $status;
-  echo "<script> alert('data berhasil dihapus');</script>";
-  return $status;
+  return mysqli_affected_rows($conn);
 }
 
 function ubah($data)
